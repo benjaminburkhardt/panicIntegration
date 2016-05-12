@@ -7,21 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		585829961CDE7832006A8F93 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585829951CDE7832006A8F93 /* CoreMedia.framework */; };
+		585829981CDE783D006A8F93 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585829971CDE783D006A8F93 /* CoreVideo.framework */; };
+		5858299A1CDE784D006A8F93 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585829991CDE784D006A8F93 /* OpenGLES.framework */; };
+		5858299C1CDE785C006A8F93 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5858299B1CDE785C006A8F93 /* QuartzCore.framework */; };
+		5858299E1CDE787A006A8F93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5858299D1CDE787A006A8F93 /* UIKit.framework */; };
+		585829A01CDE7886006A8F93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5858299F1CDE7886006A8F93 /* Foundation.framework */; };
+		585829A21CDE7893006A8F93 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585829A11CDE7893006A8F93 /* GLKit.framework */; };
+		585829A31CDE7904006A8F93 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3C089BD1CDB76B2009A29A5 /* Info.plist */; };
+		585829AA1CDE7952006A8F93 /* DefaultPoiLabel.psd in Resources */ = {isa = PBXBuildFile; fileRef = 585829A41CDE7952006A8F93 /* DefaultPoiLabel.psd */; };
+		585829AB1CDE7952006A8F93 /* DefaultPoiLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 585829A51CDE7952006A8F93 /* DefaultPoiLabel.xib */; };
+		585829AC1CDE7952006A8F93 /* PoiLabelWithImage.psd in Resources */ = {isa = PBXBuildFile; fileRef = 585829A61CDE7952006A8F93 /* PoiLabelWithImage.psd */; };
+		585829AD1CDE7952006A8F93 /* PoiLabelWithImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 585829A71CDE7952006A8F93 /* PoiLabelWithImage.xib */; };
+		585829AE1CDE7952006A8F93 /* RadarDot.psd in Resources */ = {isa = PBXBuildFile; fileRef = 585829A81CDE7952006A8F93 /* RadarDot.psd */; };
+		585829AF1CDE7952006A8F93 /* RadarScreen.psd in Resources */ = {isa = PBXBuildFile; fileRef = 585829A91CDE7952006A8F93 /* RadarScreen.psd */; };
+		B33FBFE31CDB87B900F7BBD1 /* PanicARKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B33FBFE21CDB87B900F7BBD1 /* PanicARKitResources.bundle */; };
+		B3AAEDC81CE50C110060F66B /* DefaultPoiLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AAEDC71CE50C110060F66B /* DefaultPoiLabel.png */; };
+		B3AAEDCA1CE50C750060F66B /* PoiLabelWithImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AAEDC91CE50C750060F66B /* PoiLabelWithImage.png */; };
+		B3AAEDCC1CE50CB30060F66B /* DefaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AAEDCB1CE50CB30060F66B /* DefaultImage.png */; };
+		B3BC70891CE52DD100BB3C69 /* rtPoiLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BC70881CE52DD100BB3C69 /* rtPoiLabel.png */; };
+		B3BC708B1CE52DEA00BB3C69 /* rtPoiLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3BC708A1CE52DEA00BB3C69 /* rtPoiLabel.xib */; };
+		B3BC70921CE5327600BB3C69 /* New_York_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BC70901CE5327600BB3C69 /* New_York_logo.png */; };
+		B3BC70931CE5327600BB3C69 /* UWF-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BC70911CE5327600BB3C69 /* UWF-logo.png */; };
 		B3C089B21CDB76B2009A29A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C089B11CDB76B2009A29A5 /* AppDelegate.swift */; };
-		B3C089B41CDB76B2009A29A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C089B31CDB76B2009A29A5 /* ViewController.swift */; };
 		B3C089B71CDB76B2009A29A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C089B51CDB76B2009A29A5 /* Main.storyboard */; };
 		B3C089B91CDB76B2009A29A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C089B81CDB76B2009A29A5 /* Assets.xcassets */; };
 		B3C089BC1CDB76B2009A29A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C089BA1CDB76B2009A29A5 /* LaunchScreen.storyboard */; };
+		B3CBE7BC1CDB778E007FC3BE /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBE7BA1CDB778E007FC3BE /* ARViewController.swift */; };
+		B3CBE7BE1CDB77B2007FC3BE /* PanicARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CBE7BD1CDB77B2007FC3BE /* PanicARKit.framework */; };
+		B3CBE7C01CDB77CC007FC3BE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CBE7BF1CDB77CC007FC3BE /* CoreLocation.framework */; };
+		B3CBE7C21CDB77D0007FC3BE /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CBE7C11CDB77D0007FC3BE /* CoreMotion.framework */; };
+		B3CBE7C41CDB77D4007FC3BE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CBE7C31CDB77D4007FC3BE /* AVFoundation.framework */; };
+		B3CBE7C61CDB77E8007FC3BE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CBE7C51CDB77E8007FC3BE /* MapKit.framework */; };
+		B3CBE7C81CDB77EF007FC3BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CBE7C71CDB77EF007FC3BE /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		585829951CDE7832006A8F93 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		585829971CDE783D006A8F93 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		585829991CDE784D006A8F93 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5858299B1CDE785C006A8F93 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5858299D1CDE787A006A8F93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5858299F1CDE7886006A8F93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		585829A11CDE7893006A8F93 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		585829A41CDE7952006A8F93 /* DefaultPoiLabel.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = DefaultPoiLabel.psd; path = "panicARIntegration/Framework/PanicARKitResources-Sources/DefaultPoiLabel.psd"; sourceTree = "<group>"; };
+		585829A51CDE7952006A8F93 /* DefaultPoiLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DefaultPoiLabel.xib; path = "panicARIntegration/Framework/PanicARKitResources-Sources/DefaultPoiLabel.xib"; sourceTree = "<group>"; };
+		585829A61CDE7952006A8F93 /* PoiLabelWithImage.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = PoiLabelWithImage.psd; path = "panicARIntegration/Framework/PanicARKitResources-Sources/PoiLabelWithImage.psd"; sourceTree = "<group>"; };
+		585829A71CDE7952006A8F93 /* PoiLabelWithImage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PoiLabelWithImage.xib; path = "panicARIntegration/Framework/PanicARKitResources-Sources/PoiLabelWithImage.xib"; sourceTree = "<group>"; };
+		585829A81CDE7952006A8F93 /* RadarDot.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = RadarDot.psd; path = "panicARIntegration/Framework/PanicARKitResources-Sources/RadarDot.psd"; sourceTree = "<group>"; };
+		585829A91CDE7952006A8F93 /* RadarScreen.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = RadarScreen.psd; path = "panicARIntegration/Framework/PanicARKitResources-Sources/RadarScreen.psd"; sourceTree = "<group>"; };
+		B33FBFE21CDB87B900F7BBD1 /* PanicARKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PanicARKitResources.bundle; path = panicARIntegration/Framework/PanicARKitResources.bundle; sourceTree = "<group>"; };
+		B3AAEDC71CE50C110060F66B /* DefaultPoiLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DefaultPoiLabel.png; path = "panicARIntegration/Framework/PanicARKitResources-Sources/DefaultPoiLabel.png"; sourceTree = "<group>"; };
+		B3AAEDC91CE50C750060F66B /* PoiLabelWithImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PoiLabelWithImage.png; path = "panicARIntegration/Framework/PanicARKitResources-Sources/PoiLabelWithImage.png"; sourceTree = "<group>"; };
+		B3AAEDCB1CE50CB30060F66B /* DefaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DefaultImage.png; path = panicARIntegration/Framework/PanicARKitResources.bundle/DefaultImage.png; sourceTree = "<group>"; };
+		B3BC70881CE52DD100BB3C69 /* rtPoiLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rtPoiLabel.png; path = "panicARIntegration/Framework/PanicARKitResources-Sources/rtPoiLabel.png"; sourceTree = "<group>"; };
+		B3BC708A1CE52DEA00BB3C69 /* rtPoiLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = rtPoiLabel.xib; path = "panicARIntegration/Framework/PanicARKitResources-Sources/rtPoiLabel.xib"; sourceTree = "<group>"; };
+		B3BC70901CE5327600BB3C69 /* New_York_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = New_York_logo.png; path = panicARIntegration/logos/New_York_logo.png; sourceTree = "<group>"; };
+		B3BC70911CE5327600BB3C69 /* UWF-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UWF-logo.png"; path = "panicARIntegration/logos/UWF-logo.png"; sourceTree = "<group>"; };
 		B3C089AE1CDB76B2009A29A5 /* panicARIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = panicARIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C089B11CDB76B2009A29A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3C089B31CDB76B2009A29A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3C089B61CDB76B2009A29A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3C089B81CDB76B2009A29A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C089BB1CDB76B2009A29A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3C089BD1CDB76B2009A29A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3CBE7BA1CDB778E007FC3BE /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		B3CBE7BB1CDB778E007FC3BE /* PanicBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanicBridge.h; sourceTree = "<group>"; };
+		B3CBE7BD1CDB77B2007FC3BE /* PanicARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PanicARKit.framework; path = panicARIntegration/Framework/PanicARKit.framework; sourceTree = "<group>"; };
+		B3CBE7BF1CDB77CC007FC3BE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B3CBE7C11CDB77D0007FC3BE /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B3CBE7C31CDB77D4007FC3BE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B3CBE7C51CDB77E8007FC3BE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B3CBE7C71CDB77EF007FC3BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +85,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585829961CDE7832006A8F93 /* CoreMedia.framework in Frameworks */,
+				585829981CDE783D006A8F93 /* CoreVideo.framework in Frameworks */,
+				B3CBE7BE1CDB77B2007FC3BE /* PanicARKit.framework in Frameworks */,
+				5858299A1CDE784D006A8F93 /* OpenGLES.framework in Frameworks */,
+				5858299C1CDE785C006A8F93 /* QuartzCore.framework in Frameworks */,
+				B3CBE7C61CDB77E8007FC3BE /* MapKit.framework in Frameworks */,
+				B3CBE7C21CDB77D0007FC3BE /* CoreMotion.framework in Frameworks */,
+				B3CBE7C01CDB77CC007FC3BE /* CoreLocation.framework in Frameworks */,
+				B3CBE7C41CDB77D4007FC3BE /* AVFoundation.framework in Frameworks */,
+				5858299E1CDE787A006A8F93 /* UIKit.framework in Frameworks */,
+				585829A01CDE7886006A8F93 /* Foundation.framework in Frameworks */,
+				B3CBE7C81CDB77EF007FC3BE /* CoreGraphics.framework in Frameworks */,
+				585829A21CDE7893006A8F93 /* GLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +107,33 @@
 		B3C089A51CDB76B2009A29A5 = {
 			isa = PBXGroup;
 			children = (
+				B3BC70901CE5327600BB3C69 /* New_York_logo.png */,
+				B3BC70911CE5327600BB3C69 /* UWF-logo.png */,
+				585829A41CDE7952006A8F93 /* DefaultPoiLabel.psd */,
+				585829A51CDE7952006A8F93 /* DefaultPoiLabel.xib */,
+				B3BC708A1CE52DEA00BB3C69 /* rtPoiLabel.xib */,
+				B3BC70881CE52DD100BB3C69 /* rtPoiLabel.png */,
+				B3AAEDC71CE50C110060F66B /* DefaultPoiLabel.png */,
+				B3AAEDC91CE50C750060F66B /* PoiLabelWithImage.png */,
+				585829A61CDE7952006A8F93 /* PoiLabelWithImage.psd */,
+				585829A71CDE7952006A8F93 /* PoiLabelWithImage.xib */,
+				585829A81CDE7952006A8F93 /* RadarDot.psd */,
+				585829A91CDE7952006A8F93 /* RadarScreen.psd */,
+				B3AAEDCB1CE50CB30060F66B /* DefaultImage.png */,
+				585829A11CDE7893006A8F93 /* GLKit.framework */,
+				5858299F1CDE7886006A8F93 /* Foundation.framework */,
+				5858299D1CDE787A006A8F93 /* UIKit.framework */,
+				5858299B1CDE785C006A8F93 /* QuartzCore.framework */,
+				585829991CDE784D006A8F93 /* OpenGLES.framework */,
+				585829971CDE783D006A8F93 /* CoreVideo.framework */,
+				585829951CDE7832006A8F93 /* CoreMedia.framework */,
+				B33FBFE21CDB87B900F7BBD1 /* PanicARKitResources.bundle */,
+				B3CBE7C71CDB77EF007FC3BE /* CoreGraphics.framework */,
+				B3CBE7C51CDB77E8007FC3BE /* MapKit.framework */,
+				B3CBE7C31CDB77D4007FC3BE /* AVFoundation.framework */,
+				B3CBE7C11CDB77D0007FC3BE /* CoreMotion.framework */,
+				B3CBE7BF1CDB77CC007FC3BE /* CoreLocation.framework */,
+				B3CBE7BD1CDB77B2007FC3BE /* PanicARKit.framework */,
 				B3C089B01CDB76B2009A29A5 /* panicARIntegration */,
 				B3C089AF1CDB76B2009A29A5 /* Products */,
 			);
@@ -54,8 +150,9 @@
 		B3C089B01CDB76B2009A29A5 /* panicARIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				B3CBE7BA1CDB778E007FC3BE /* ARViewController.swift */,
+				B3CBE7BB1CDB778E007FC3BE /* PanicBridge.h */,
 				B3C089B11CDB76B2009A29A5 /* AppDelegate.swift */,
-				B3C089B31CDB76B2009A29A5 /* ViewController.swift */,
 				B3C089B51CDB76B2009A29A5 /* Main.storyboard */,
 				B3C089B81CDB76B2009A29A5 /* Assets.xcassets */,
 				B3C089BA1CDB76B2009A29A5 /* LaunchScreen.storyboard */,
@@ -123,9 +220,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585829AA1CDE7952006A8F93 /* DefaultPoiLabel.psd in Resources */,
+				B3AAEDCC1CE50CB30060F66B /* DefaultImage.png in Resources */,
+				585829AB1CDE7952006A8F93 /* DefaultPoiLabel.xib in Resources */,
+				585829AC1CDE7952006A8F93 /* PoiLabelWithImage.psd in Resources */,
+				585829AD1CDE7952006A8F93 /* PoiLabelWithImage.xib in Resources */,
+				585829AE1CDE7952006A8F93 /* RadarDot.psd in Resources */,
+				585829AF1CDE7952006A8F93 /* RadarScreen.psd in Resources */,
+				585829A31CDE7904006A8F93 /* Info.plist in Resources */,
 				B3C089BC1CDB76B2009A29A5 /* LaunchScreen.storyboard in Resources */,
 				B3C089B91CDB76B2009A29A5 /* Assets.xcassets in Resources */,
+				B3BC70891CE52DD100BB3C69 /* rtPoiLabel.png in Resources */,
 				B3C089B71CDB76B2009A29A5 /* Main.storyboard in Resources */,
+				B3BC708B1CE52DEA00BB3C69 /* rtPoiLabel.xib in Resources */,
+				B3AAEDCA1CE50C750060F66B /* PoiLabelWithImage.png in Resources */,
+				B3BC70921CE5327600BB3C69 /* New_York_logo.png in Resources */,
+				B33FBFE31CDB87B900F7BBD1 /* PanicARKitResources.bundle in Resources */,
+				B3AAEDC81CE50C110060F66B /* DefaultPoiLabel.png in Resources */,
+				B3BC70931CE5327600BB3C69 /* UWF-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C089B41CDB76B2009A29A5 /* ViewController.swift in Sources */,
+				B3CBE7BC1CDB778E007FC3BE /* ARViewController.swift in Sources */,
 				B3C089B21CDB76B2009A29A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +296,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -203,7 +316,12 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = ./panicARIntegration/PanicBridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -230,6 +348,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -242,7 +361,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = ./panicARIntegration/PanicBridge.h;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -252,10 +376,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/panicARIntegration/Framework",
+				);
 				INFOPLIST_FILE = panicARIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.hs-reutlingen.panicARIntegration";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.hs-reutlingen2.panicARIntegration22";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = ./panicARIntegration/PanicBridge.h;
 			};
 			name = Debug;
 		};
@@ -263,10 +400,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/panicARIntegration/Framework",
+				);
 				INFOPLIST_FILE = panicARIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.hs-reutlingen.panicARIntegration";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.hs-reutlingen2.panicARIntegration22";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = ./panicARIntegration/PanicBridge.h;
 			};
 			name = Release;
 		};
@@ -289,6 +439,7 @@
 				B3C089C21CDB76B2009A29A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
