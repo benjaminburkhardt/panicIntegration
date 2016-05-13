@@ -83,6 +83,8 @@ class ARViewController: PARViewController, PARControllerDelegate {
         return true
     }
     
+
+    
     override func didUpdateLocation(newLocation: CLLocation) {
         
         //if person in on campus (Location of NYC, that my be spoofed with Xcode)
@@ -94,17 +96,17 @@ class ARViewController: PARViewController, PARControllerDelegate {
             newLocation.coordinate.longitude > -73.9900 && newLocation.coordinate.longitude < -73.9700
             && locationChecked == false){
             
-           locationChecked = true
-           
+            locationChecked = true
+            
             ARPois.createARObjectsOffCampus()
         }
         
         
         let l: CLLocation = newLocation
         let c: CLLocationCoordinate2D = l.coordinate
-        let locationLabel: UILabel = infoLabels[1] 
+        let locationLabel: UILabel = infoLabels[1]
         locationLabel.hidden = false
-        let locationDetailsLabel: UILabel = infoLabels[2] 
+        let locationDetailsLabel: UILabel = infoLabels[2]
         locationDetailsLabel.hidden = false
         locationLabel.text = String(format: "%.4f° %.4f° %.2fm", c.latitude, c.longitude, l.altitude)
         locationDetailsLabel.text = String(format: "±%.2fm ±%.2fm", l.horizontalAccuracy, l.verticalAccuracy)
@@ -119,7 +121,7 @@ class ARViewController: PARViewController, PARControllerDelegate {
         super.didUpdateHeading(newHeading)
         
         //infolaabels for debugging
-        let headingLabel: UILabel = infoLabels[3] 
+        let headingLabel: UILabel = infoLabels[3]
         headingLabel.hidden = false
         let headingDetailsLabel: UILabel = infoLabels[4]
         headingDetailsLabel.hidden = false
@@ -140,7 +142,7 @@ class ARViewController: PARViewController, PARControllerDelegate {
     }
     
     
-   
+    
     
     override func showARViewInOrientation(orientation: UIDeviceOrientation) -> Bool {
         super.showARViewInOrientation(orientation)
@@ -148,36 +150,28 @@ class ARViewController: PARViewController, PARControllerDelegate {
     }
     
     
+    
+    
     func updateInfoLabel() {
         var deviceAttitude: PSKDeviceAttitude = PSKSensorManager.sharedSensorManager().deviceAttitude
-        
-        
-        
         var infoLabel: UILabel = infoLabels[0]
         var display: String? = nil
-    
         
-            display = String(format: "GPS signal quality: %.1d (~%.1f Meters)", String(deviceAttitude.signalQuality()), deviceAttitude.locationAccuracy())
-            infoLabel.textColor = UIColor.whiteColor()
-       
+        display = String(format: "GPS signal quality: %.1d (~%.1f Meters)", String(deviceAttitude.signalQuality()), deviceAttitude.locationAccuracy())
+        infoLabel.textColor = UIColor.whiteColor()
         infoLabel.text = display!.stringByAppendingFormat("\nTracking: Gyroscope (iOS 5): y:%+.4f, p:%+.4f, r:%+.4f", deviceAttitude.attitudeYaw(), deviceAttitude.attitudePitch(), deviceAttitude.attitudeRoll())
     }
     
     
     
     override func startsARAutomatically() -> Bool {
-      super.startsARAutomatically()
+        super.startsARAutomatically()
         return true
     }
     
     //TODO: function is not called when POI is tapped!
     func arDidTapObject(object: PARObjectDelegate!) {
-    
-        
         print("hallo")
-        
-        
-        // _ = 1
     }
     
 }

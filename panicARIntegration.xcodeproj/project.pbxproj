@@ -22,6 +22,9 @@
 		585829AE1CDE7952006A8F93 /* RadarDot.psd in Resources */ = {isa = PBXBuildFile; fileRef = 585829A81CDE7952006A8F93 /* RadarDot.psd */; };
 		585829AF1CDE7952006A8F93 /* RadarScreen.psd in Resources */ = {isa = PBXBuildFile; fileRef = 585829A91CDE7952006A8F93 /* RadarScreen.psd */; };
 		B33FBFE31CDB87B900F7BBD1 /* PanicARKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B33FBFE21CDB87B900F7BBD1 /* PanicARKitResources.bundle */; };
+		B37E5DD91CE689E6002454C0 /* benPoiLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37E5DD81CE689E6002454C0 /* benPoiLabel.xib */; };
+		B37E5DDB1CE68B04002454C0 /* benPoiLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = B37E5DDA1CE68B04002454C0 /* benPoiLabel.png */; };
+		B37E5DDD1CE68BE0002454C0 /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = B37E5DDC1CE68BE0002454C0 /* house.png */; };
 		B3AAEDC81CE50C110060F66B /* DefaultPoiLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AAEDC71CE50C110060F66B /* DefaultPoiLabel.png */; };
 		B3AAEDCA1CE50C750060F66B /* PoiLabelWithImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AAEDC91CE50C750060F66B /* PoiLabelWithImage.png */; };
 		B3AAEDCC1CE50CB30060F66B /* DefaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AAEDCB1CE50CB30060F66B /* DefaultImage.png */; };
@@ -30,6 +33,7 @@
 		B3BC70921CE5327600BB3C69 /* New_York_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BC70901CE5327600BB3C69 /* New_York_logo.png */; };
 		B3BC70931CE5327600BB3C69 /* UWF-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BC70911CE5327600BB3C69 /* UWF-logo.png */; };
 		B3BC70961CE5478F00BB3C69 /* ARPois.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC70951CE5478F00BB3C69 /* ARPois.swift */; };
+		B3BC70981CE572B600BB3C69 /* ARPoiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC70971CE572B600BB3C69 /* ARPoiLabel.swift */; };
 		B3C089B21CDB76B2009A29A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C089B11CDB76B2009A29A5 /* AppDelegate.swift */; };
 		B3C089B71CDB76B2009A29A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C089B51CDB76B2009A29A5 /* Main.storyboard */; };
 		B3C089B91CDB76B2009A29A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C089B81CDB76B2009A29A5 /* Assets.xcassets */; };
@@ -58,6 +62,9 @@
 		585829A81CDE7952006A8F93 /* RadarDot.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = RadarDot.psd; path = "panicARIntegration/Framework/PanicARKitResources-Sources/RadarDot.psd"; sourceTree = "<group>"; };
 		585829A91CDE7952006A8F93 /* RadarScreen.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = RadarScreen.psd; path = "panicARIntegration/Framework/PanicARKitResources-Sources/RadarScreen.psd"; sourceTree = "<group>"; };
 		B33FBFE21CDB87B900F7BBD1 /* PanicARKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PanicARKitResources.bundle; path = panicARIntegration/Framework/PanicARKitResources.bundle; sourceTree = "<group>"; };
+		B37E5DD81CE689E6002454C0 /* benPoiLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = benPoiLabel.xib; path = "panicARIntegration/Framework/PanicARKitResources-Sources/benPoiLabel.xib"; sourceTree = "<group>"; };
+		B37E5DDA1CE68B04002454C0 /* benPoiLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = benPoiLabel.png; path = "panicARIntegration/Framework/PanicARKitResources-Sources/benPoiLabel.png"; sourceTree = "<group>"; };
+		B37E5DDC1CE68BE0002454C0 /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
 		B3AAEDC71CE50C110060F66B /* DefaultPoiLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DefaultPoiLabel.png; path = "panicARIntegration/Framework/PanicARKitResources-Sources/DefaultPoiLabel.png"; sourceTree = "<group>"; };
 		B3AAEDC91CE50C750060F66B /* PoiLabelWithImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PoiLabelWithImage.png; path = "panicARIntegration/Framework/PanicARKitResources-Sources/PoiLabelWithImage.png"; sourceTree = "<group>"; };
 		B3AAEDCB1CE50CB30060F66B /* DefaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DefaultImage.png; path = panicARIntegration/Framework/PanicARKitResources.bundle/DefaultImage.png; sourceTree = "<group>"; };
@@ -66,6 +73,7 @@
 		B3BC70901CE5327600BB3C69 /* New_York_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = New_York_logo.png; path = panicARIntegration/logos/New_York_logo.png; sourceTree = "<group>"; };
 		B3BC70911CE5327600BB3C69 /* UWF-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UWF-logo.png"; path = "panicARIntegration/logos/UWF-logo.png"; sourceTree = "<group>"; };
 		B3BC70951CE5478F00BB3C69 /* ARPois.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARPois.swift; sourceTree = "<group>"; };
+		B3BC70971CE572B600BB3C69 /* ARPoiLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARPoiLabel.swift; sourceTree = "<group>"; };
 		B3C089AE1CDB76B2009A29A5 /* panicARIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = panicARIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C089B11CDB76B2009A29A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3C089B61CDB76B2009A29A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,6 +117,9 @@
 		B3BC70941CE5471800BB3C69 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B37E5DDC1CE68BE0002454C0 /* house.png */,
+				B37E5DDA1CE68B04002454C0 /* benPoiLabel.png */,
+				B37E5DD81CE689E6002454C0 /* benPoiLabel.xib */,
 				B3BC70901CE5327600BB3C69 /* New_York_logo.png */,
 				B3BC70911CE5327600BB3C69 /* UWF-logo.png */,
 				585829A41CDE7952006A8F93 /* DefaultPoiLabel.psd */,
@@ -168,6 +179,7 @@
 				B3C089B81CDB76B2009A29A5 /* Assets.xcassets */,
 				B3C089BA1CDB76B2009A29A5 /* LaunchScreen.storyboard */,
 				B3C089BD1CDB76B2009A29A5 /* Info.plist */,
+				B3BC70971CE572B600BB3C69 /* ARPoiLabel.swift */,
 			);
 			path = panicARIntegration;
 			sourceTree = "<group>";
@@ -232,8 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				585829AA1CDE7952006A8F93 /* DefaultPoiLabel.psd in Resources */,
+				B37E5DDD1CE68BE0002454C0 /* house.png in Resources */,
 				B3AAEDCC1CE50CB30060F66B /* DefaultImage.png in Resources */,
 				585829AB1CDE7952006A8F93 /* DefaultPoiLabel.xib in Resources */,
+				B37E5DDB1CE68B04002454C0 /* benPoiLabel.png in Resources */,
 				585829AC1CDE7952006A8F93 /* PoiLabelWithImage.psd in Resources */,
 				585829AD1CDE7952006A8F93 /* PoiLabelWithImage.xib in Resources */,
 				585829AE1CDE7952006A8F93 /* RadarDot.psd in Resources */,
@@ -248,6 +262,7 @@
 				B3BC70921CE5327600BB3C69 /* New_York_logo.png in Resources */,
 				B33FBFE31CDB87B900F7BBD1 /* PanicARKitResources.bundle in Resources */,
 				B3AAEDC81CE50C110060F66B /* DefaultPoiLabel.png in Resources */,
+				B37E5DD91CE689E6002454C0 /* benPoiLabel.xib in Resources */,
 				B3BC70931CE5327600BB3C69 /* UWF-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +276,7 @@
 			files = (
 				B3CBE7BC1CDB778E007FC3BE /* ARViewController.swift in Sources */,
 				B3BC70961CE5478F00BB3C69 /* ARPois.swift in Sources */,
+				B3BC70981CE572B600BB3C69 /* ARPoiLabel.swift in Sources */,
 				B3C089B21CDB76B2009A29A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

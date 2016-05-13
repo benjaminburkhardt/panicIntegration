@@ -39,6 +39,9 @@
 /*! title of the marker (retained) */
 @property (nonatomic, strong) NSString *title;
 
+/*! title of the marker (retained) */
+@property (nonatomic, strong) NSString *distance;
+
 /*! content (description) of the marker (retained) */
 @property (nonatomic, strong) NSString *description;
 
