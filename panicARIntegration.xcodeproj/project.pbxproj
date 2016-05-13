@@ -29,6 +29,7 @@
 		B3BC708B1CE52DEA00BB3C69 /* rtPoiLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3BC708A1CE52DEA00BB3C69 /* rtPoiLabel.xib */; };
 		B3BC70921CE5327600BB3C69 /* New_York_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BC70901CE5327600BB3C69 /* New_York_logo.png */; };
 		B3BC70931CE5327600BB3C69 /* UWF-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3BC70911CE5327600BB3C69 /* UWF-logo.png */; };
+		B3BC70961CE5478F00BB3C69 /* ARPois.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC70951CE5478F00BB3C69 /* ARPois.swift */; };
 		B3C089B21CDB76B2009A29A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C089B11CDB76B2009A29A5 /* AppDelegate.swift */; };
 		B3C089B71CDB76B2009A29A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3C089B51CDB76B2009A29A5 /* Main.storyboard */; };
 		B3C089B91CDB76B2009A29A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C089B81CDB76B2009A29A5 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		B3BC708A1CE52DEA00BB3C69 /* rtPoiLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = rtPoiLabel.xib; path = "panicARIntegration/Framework/PanicARKitResources-Sources/rtPoiLabel.xib"; sourceTree = "<group>"; };
 		B3BC70901CE5327600BB3C69 /* New_York_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = New_York_logo.png; path = panicARIntegration/logos/New_York_logo.png; sourceTree = "<group>"; };
 		B3BC70911CE5327600BB3C69 /* UWF-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UWF-logo.png"; path = "panicARIntegration/logos/UWF-logo.png"; sourceTree = "<group>"; };
+		B3BC70951CE5478F00BB3C69 /* ARPois.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARPois.swift; sourceTree = "<group>"; };
 		B3C089AE1CDB76B2009A29A5 /* panicARIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = panicARIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C089B11CDB76B2009A29A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3C089B61CDB76B2009A29A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,7 +106,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3C089A51CDB76B2009A29A5 = {
+		B3BC70941CE5471800BB3C69 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				B3BC70901CE5327600BB3C69 /* New_York_logo.png */,
@@ -120,6 +122,15 @@
 				585829A81CDE7952006A8F93 /* RadarDot.psd */,
 				585829A91CDE7952006A8F93 /* RadarScreen.psd */,
 				B3AAEDCB1CE50CB30060F66B /* DefaultImage.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B3C089A51CDB76B2009A29A5 = {
+			isa = PBXGroup;
+			children = (
+				B3C089B01CDB76B2009A29A5 /* panicARIntegration */,
+				B3BC70941CE5471800BB3C69 /* Images */,
 				585829A11CDE7893006A8F93 /* GLKit.framework */,
 				5858299F1CDE7886006A8F93 /* Foundation.framework */,
 				5858299D1CDE787A006A8F93 /* UIKit.framework */,
@@ -134,7 +145,6 @@
 				B3CBE7C11CDB77D0007FC3BE /* CoreMotion.framework */,
 				B3CBE7BF1CDB77CC007FC3BE /* CoreLocation.framework */,
 				B3CBE7BD1CDB77B2007FC3BE /* PanicARKit.framework */,
-				B3C089B01CDB76B2009A29A5 /* panicARIntegration */,
 				B3C089AF1CDB76B2009A29A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				B3CBE7BA1CDB778E007FC3BE /* ARViewController.swift */,
+				B3BC70951CE5478F00BB3C69 /* ARPois.swift */,
 				B3CBE7BB1CDB778E007FC3BE /* PanicBridge.h */,
 				B3C089B11CDB76B2009A29A5 /* AppDelegate.swift */,
 				B3C089B51CDB76B2009A29A5 /* Main.storyboard */,
@@ -249,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3CBE7BC1CDB778E007FC3BE /* ARViewController.swift in Sources */,
+				B3BC70961CE5478F00BB3C69 /* ARPois.swift in Sources */,
 				B3C089B21CDB76B2009A29A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,6 +23,9 @@ class ARViewController: PARViewController, PARControllerDelegate {
     //Information for debugging
     @IBOutlet var infoLabels: [UILabel]!
     
+    //counter for location checker
+    var locationChecked = false
+    
     
     
     override func viewDidLoad() {
@@ -42,7 +45,7 @@ class ARViewController: PARViewController, PARControllerDelegate {
         }
         
         //radar apperance settings
-        //self.arRadarView.setRadarRange(1500)
+        self.arRadarView.setRadarRange(500)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -57,12 +60,15 @@ class ARViewController: PARViewController, PARControllerDelegate {
         
         // setup radar
         //position
-        //let rect: CGRect = CGRectMake(0.0, 0.0, 0.0, 45.0)
-        self.radarThumbnailPosition = PARRadarPositionBottomLeft
-        self.arRadarView.setRadarToThumbnail(radarThumbnailPosition)
+        let rect: CGRect = CGRectMake(0.0, 0.0, 0.0, 45.0)
+        
+        //self.radarThumbnailPosition = PARRadarPositionBottomRight
+        
+        //TODO: Die Position des Radars wird nach viewDidAppear() überschireben. Dies geschieht immer nach dem das Gerät aus der faceUp Orientierung bewegt wird.
+        self.arRadarView.setRadarToThumbnail(radarThumbnailPosition, withAdditionalOffset: rect)
         self.arRadarView.showRadar()
         
-        createARPoiObjects()
+        ARPois.createARPoiObjects()
         
     }
     
@@ -79,6 +85,20 @@ class ARViewController: PARViewController, PARControllerDelegate {
     
     override func didUpdateLocation(newLocation: CLLocation) {
         
+        //if person in on campus (Location of NYC, that my be spoofed with Xcode)
+        //this lets us decide which POIS to show, depending on the persons location
+        //in this testcase, this will remove the NYC label, when Location in NYC
+        //info: benjamins home label will be covered by the UWF label - but it is there!
+        
+        if(newLocation.coordinate.latitude < 40.7700 && newLocation.coordinate.latitude > 40.7400 &&
+            newLocation.coordinate.longitude > -73.9900 && newLocation.coordinate.longitude < -73.9700
+            && locationChecked == false){
+            
+           locationChecked = true
+           
+            ARPois.createARObjectsOffCampus()
+        }
+        
         
         let l: CLLocation = newLocation
         let c: CLLocationCoordinate2D = l.coordinate
@@ -91,6 +111,8 @@ class ARViewController: PARViewController, PARControllerDelegate {
         locationLabel.textColor = UIColor.whiteColor()
         locationDetailsLabel.textColor = UIColor.whiteColor()
         super.didUpdateLocation(newLocation)
+        
+        
     }
     
     override func didUpdateHeading(newHeading: CLHeading) {
@@ -118,38 +140,10 @@ class ARViewController: PARViewController, PARControllerDelegate {
     }
     
     
-    func createARPoiObjects() {
-        // first clear old objects
-        PARController.sharedARController().clearObjects()
-       
-        
-        //--label creation--
-        //Create location
-        let nearDavidsHome = CLLocation(latitude: 48.506856, longitude: 9.182793)
-        let nearBenjaminsHome = CLLocation(latitude: 30.536485, longitude: -87.219200)
-        let uwfLocation = CLLocation(latitude: 30.549012, longitude: -87.218514)
-        let newYorkLocation = CLLocation(latitude: 40.706597, longitude: -74.011312)
-        
-        //Create POILabel
-        let nearDavidsHomeLabel = PARPoiLabel(title: "@Davids home", theDescription: "near the home", atLocation: nearDavidsHome)
-        let nearBenjaminsHomeLabel = PARPoiLabel(title: "@Benjamins home", theDescription: "near the home", atLocation: nearBenjaminsHome)
-        let uwfLabel = PARPoiLabel(title: "UWF", theDescription: "University of West Florida", theImage:UIImage(named:"UWF-logo.png"), fromTemplateXib:"PoiLabelWithImage" , atLocation: uwfLocation)
-        let newYorkLabel = PARPoiLabel(title: "New York", theDescription: "The Big Apple", theImage:UIImage(named:"New_York_logo.png"), fromTemplateXib:"rtPoiLabel" , atLocation: newYorkLocation)
-        
-        
-        //Add label to ViewController
-        PARController.sharedARController().addObject(nearDavidsHomeLabel)
-        PARController.sharedARController().addObject(nearBenjaminsHomeLabel)
-        PARController.sharedARController().addObject(uwfLabel)
-        PARController.sharedARController().addObject(newYorkLabel)
-        
-        //print the created POIs
-        NSLog("Number of PAR Objects in SharedController: %d", PARController.sharedARController().numberOfObjects())
-        
-        
-    }
+   
     
     override func showARViewInOrientation(orientation: UIDeviceOrientation) -> Bool {
+        super.showARViewInOrientation(orientation)
         return true
     }
     
@@ -157,31 +151,33 @@ class ARViewController: PARViewController, PARControllerDelegate {
     func updateInfoLabel() {
         var deviceAttitude: PSKDeviceAttitude = PSKSensorManager.sharedSensorManager().deviceAttitude
         
-        //    let deviceAttitude: PSKDeviceAttitude = PSKDeviceAttitude.init() //l.coordinate
         
         
-        var infoLabel: UILabel = infoLabels[0] as! UILabel
+        var infoLabel: UILabel = infoLabels[0]
         var display: String? = nil
-        if !deviceAttitude.hasLocation() {
-            infoLabel.textColor = UIColor.redColor()
-            display = "could not retrieve location"
-        }
-        else {
+    
+        
             display = String(format: "GPS signal quality: %.1d (~%.1f Meters)", String(deviceAttitude.signalQuality()), deviceAttitude.locationAccuracy())
             infoLabel.textColor = UIColor.whiteColor()
-        }
+       
         infoLabel.text = display!.stringByAppendingFormat("\nTracking: Gyroscope (iOS 5): y:%+.4f, p:%+.4f, r:%+.4f", deviceAttitude.attitudeYaw(), deviceAttitude.attitudePitch(), deviceAttitude.attitudeRoll())
     }
     
     
     
     override func startsARAutomatically() -> Bool {
+      super.startsARAutomatically()
         return true
     }
     
-    
+    //TODO: function is not called when POI is tapped!
     func arDidTapObject(object: PARObjectDelegate!) {
-        _ = 1
+    
+        
+        print("hallo")
+        
+        
+        // _ = 1
     }
     
 }
